@@ -1,16 +1,15 @@
-package com.Author.model;
+package com.example.demo.Author.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Books {
+public class Author {
 	
 	@Id
 	@GeneratedValue
 	private Integer id;
-	
 	private String title;
 	private String category;
 	private String image;
@@ -75,7 +74,7 @@ public class Books {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public Books(Integer id, String title, String category, String image, Double price, String author, String publisher,
+	public Author(Integer id, String title, String category, String image, Double price, String author, String publisher,
 			String active, String content) {
 		super();
 		this.id = id;
@@ -88,7 +87,7 @@ public class Books {
 		this.active = active;
 		this.content = content;
 	}
-	public Books() {
+	public Author() {
 		super();
 	}
 	
